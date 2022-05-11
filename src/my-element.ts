@@ -8,8 +8,6 @@ var websocket;
 export class MyElement extends LitElement {
   static styles = styles;
 
-  @property()
-  name = 'World';
 
   @property({ type: Number })
   count = 0;
@@ -35,11 +33,11 @@ export class MyElement extends LitElement {
             <label> Speed </label>
             <input
               type="range"
-              min="1000"
-              max="2000"
+              min="0"
+              max="100"
               step="5"
               class="slider"
-              id="runSpeed"
+              id="moveRighh"
               value="0"
               @change=${this.servo}
             />
